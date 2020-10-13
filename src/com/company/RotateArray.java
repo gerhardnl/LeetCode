@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Collections;
+import java.util.LinkedList;
+
 public class RotateArray {
     public void rotate(int[] nums, int k) {
         k %= nums.length;
@@ -16,4 +19,5 @@ public class RotateArray {
 
         }
     }
+
 }
