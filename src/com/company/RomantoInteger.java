@@ -7,125 +7,125 @@ public class RomantoInteger {
         int number = 0;
 
 
-        if (s.contains("MM")){
+        if (s.contains("MM")) {
             number += 2000;
-            s = s.replaceAll("MM","");
+            s = s.replaceAll("MM", "");
         }
-        if (s.contains("CM")){
-            number +=900;
-            s = s.replaceAll("CM","");
+        if (s.contains("CM")) {
+            number += 900;
+            s = s.replaceAll("CM", "");
         }
-        if (s.contains("M")){
+        if (s.contains("M")) {
             number += 1000;
-            s = s.replaceAll("M","");
+            s = s.replaceAll("M", "");
         }
-        if (s.contains("DCCC")){
-            number +=800;
-            s = s.replaceAll("DCCC","");
+        if (s.contains("DCCC")) {
+            number += 800;
+            s = s.replaceAll("DCCC", "");
         }
-        if (s.contains("DCC")){
-            number +=700;
-            s = s.replaceAll("DCC","");
+        if (s.contains("DCC")) {
+            number += 700;
+            s = s.replaceAll("DCC", "");
         }
-        if (s.contains("DC")){
-            number +=600;
-            s = s.replaceAll("DC","");
+        if (s.contains("DC")) {
+            number += 600;
+            s = s.replaceAll("DC", "");
         }
-        if (s.contains("CD")){
-            number +=400;
-            s = s.replaceAll("CD","");
+        if (s.contains("CD")) {
+            number += 400;
+            s = s.replaceAll("CD", "");
         }
-        if (s.contains("D")){
-            number +=500;
-            s = s.replaceAll("D","");
-        }
-
-        if (s.contains("CCC")){
-            number +=300;
-            s = s.replaceAll("CCC","");
-        }
-        if (s.contains("CC")){
-            number +=200;
-            s = s.replaceAll("CC","");
-        }
-        if (s.contains("XC")){
-            number +=90;
-            s = s.replaceAll("XC","");
-        }
-        if (s.contains("C")){
-            number +=100;
-            s = s.replaceAll("C","");
+        if (s.contains("D")) {
+            number += 500;
+            s = s.replaceAll("D", "");
         }
 
-        if (s.contains("LXXX")){
-            number +=80;
-            s = s.replaceAll("LXXX","");
+        if (s.contains("CCC")) {
+            number += 300;
+            s = s.replaceAll("CCC", "");
         }
-        if (s.contains("LXX")){
-            number +=70;
-            s = s.replaceAll("LXX","");
+        if (s.contains("CC")) {
+            number += 200;
+            s = s.replaceAll("CC", "");
         }
-        if (s.contains("LX")){
-            number +=60;
-            s = s.replaceAll("LX","");
+        if (s.contains("XC")) {
+            number += 90;
+            s = s.replaceAll("XC", "");
         }
-        if (s.contains("XL")){
-            number +=40;
-            s = s.replaceAll("XL","");
-        }
-        if (s.contains("L")){
-            number +=50;
-            s = s.replaceAll("L","");
+        if (s.contains("C")) {
+            number += 100;
+            s = s.replaceAll("C", "");
         }
 
-        if (s.contains("XXX")){
-            number +=30;
-            s = s.replaceAll("XXX","");
+        if (s.contains("LXXX")) {
+            number += 80;
+            s = s.replaceAll("LXXX", "");
         }
-        if (s.contains("XX")){
-            number +=20;
-            s = s.replaceAll("XX","");
+        if (s.contains("LXX")) {
+            number += 70;
+            s = s.replaceAll("LXX", "");
         }
-        if (s.contains("IX")){
-            number +=9;
-            s = s.replaceAll("IX","");
+        if (s.contains("LX")) {
+            number += 60;
+            s = s.replaceAll("LX", "");
         }
-        if (s.contains("X")){
-            number +=10;
-            s = s.replaceAll("X","");
+        if (s.contains("XL")) {
+            number += 40;
+            s = s.replaceAll("XL", "");
+        }
+        if (s.contains("L")) {
+            number += 50;
+            s = s.replaceAll("L", "");
         }
 
-        if (s.contains("VIII")){
-            number +=8;
-            s = s.replaceAll("VIII","");
+        if (s.contains("XXX")) {
+            number += 30;
+            s = s.replaceAll("XXX", "");
         }
-        if (s.contains("VII")){
-            number +=7;
-            s = s.replaceAll("VII","");
+        if (s.contains("XX")) {
+            number += 20;
+            s = s.replaceAll("XX", "");
         }
-        if (s.contains("VI")){
-            number +=6;
-            s = s.replaceAll("VI","");
+        if (s.contains("IX")) {
+            number += 9;
+            s = s.replaceAll("IX", "");
         }
-        if (s.contains("IV")){
-            number +=4;
-            s = s.replaceAll("IV","");
+        if (s.contains("X")) {
+            number += 10;
+            s = s.replaceAll("X", "");
         }
-        if (s.contains("V")){
-            number +=5;
-            s = s.replaceAll("V","");
+
+        if (s.contains("VIII")) {
+            number += 8;
+            s = s.replaceAll("VIII", "");
         }
-        if (s.contains("III")){
-            number +=3;
-            s = s.replaceAll("III","");
+        if (s.contains("VII")) {
+            number += 7;
+            s = s.replaceAll("VII", "");
         }
-        if (s.contains("II")){
-            number +=2;
-            s = s.replaceAll("II","");
+        if (s.contains("VI")) {
+            number += 6;
+            s = s.replaceAll("VI", "");
         }
-        if (s.contains("I")){
-            number +=1;
-            s = s.replaceAll("I","");
+        if (s.contains("IV")) {
+            number += 4;
+            s = s.replaceAll("IV", "");
+        }
+        if (s.contains("V")) {
+            number += 5;
+            s = s.replaceAll("V", "");
+        }
+        if (s.contains("III")) {
+            number += 3;
+            s = s.replaceAll("III", "");
+        }
+        if (s.contains("II")) {
+            number += 2;
+            s = s.replaceAll("II", "");
+        }
+        if (s.contains("I")) {
+            number += 1;
+            s = s.replaceAll("I", "");
         }
         System.out.println(number);
         return number;

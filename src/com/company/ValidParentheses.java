@@ -8,18 +8,18 @@ public class ValidParentheses {
         if (s.length() % 2 != 0)
             return false;
 
-        for (char c: s.toCharArray()) {
-            if (c == '(' || c == '{' || c == '['){
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
-            }else if (c == ')' && !stack.empty() && stack.peek() == '('){
+            } else if (c == ')' && !stack.empty() && stack.peek() == '(') {
                 stack.pop();
-            }else if (c == '}' && !stack.empty() && stack.peek() == '{'){
+            } else if (c == '}' && !stack.empty() && stack.peek() == '{') {
                 stack.pop();
-            }else if (c == ']' && !stack.empty() && stack.peek() == '['){
+            } else if (c == ']' && !stack.empty() && stack.peek() == '[') {
                 stack.pop();
             }
         }
-        if (stack.empty() == true){
+        if (stack.empty() == true) {
             return true;
         }
         return false;

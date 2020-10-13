@@ -9,22 +9,23 @@ public class HappyNumber {
         Set<Integer> seen = new HashSet<>();
         ArrayList<Integer> seperated = new ArrayList();
 
-            while (n != 1) {
-                if (!seen.contains(n)) {
-                    seen.add(n);
-                    seperated.clear();
-                    while (n != 0) {
-                        seperated.add(n % 10);
-                        n = n / 10;
-                    }
-                    for (int i = 0; i < seperated.size(); i++) {
-                        n = n + (seperated.get(i) * seperated.get(i));
-                    }
-                }else return false;
-            }
+        while (n != 1) {
+            if (!seen.contains(n)) {
+                seen.add(n);
+                seperated.clear();
+                while (n != 0) {
+                    seperated.add(n % 10);
+                    n = n / 10;
+                }
+                for (int i = 0; i < seperated.size(); i++) {
+                    n = n + (seperated.get(i) * seperated.get(i));
+                }
+            } else return false;
+        }
         System.out.println("is happy");
         return true;
     }
+
     public boolean isHappycheat(int n) {
         Set<Integer> seen = new HashSet<>();
         while (!seen.contains(n)) {

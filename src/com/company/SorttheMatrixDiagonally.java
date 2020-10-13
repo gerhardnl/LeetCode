@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class SorttheMatrixDiagonally {
     public int[][] diagonalSort(int[][] mat) {
         int[] count = new int[101];
@@ -41,7 +38,6 @@ public class SorttheMatrixDiagonally {
         }
 
         return mat;
-
 
 
     }

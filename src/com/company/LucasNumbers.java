@@ -1,8 +1,7 @@
 package com.company;
 
 public class LucasNumbers {
-    public int lucas(int n)
-    {
+    public int lucas(int n) {
         if (n == 0)
             return 2;
         if (n == 1)
