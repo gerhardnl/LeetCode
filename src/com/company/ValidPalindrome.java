@@ -1,6 +1,7 @@
 package com.company;
 
 public class ValidPalindrome {
+
     public boolean isPalindrome(String s) {
         int leftPointer = 0;
         int rightPointer = s.length() - 1;
@@ -18,7 +19,6 @@ public class ValidPalindrome {
             }
         }
         return true;
-
     }
 
     public boolean raphael(String s) {

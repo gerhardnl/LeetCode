@@ -1,43 +1,49 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
-// fungerer ikke
 public class SubstringwithConcatenationofAllWords {
-
-    public static StringBuilder permute(java.util.List<String> arr, int k) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = k; i < arr.size(); i++) {
-            java.util.Collections.swap(arr, i, k);
-            permute(arr, k + 1);
-            java.util.Collections.swap(arr, k, i);
-        }
-        if (k == arr.size() - 1) {
-            for (int i = 0; i < arr.size(); i++) {
-                stringBuilder.append(arr.get(i));
-
-            }
-            System.out.println(stringBuilder);
-        }
-        return stringBuilder;
-    }
+    static List<String> list = new ArrayList<>();
 
     public List<Integer> findSubstring(String s, String[] words) {
 
-        List<Integer> indexs = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+        List<String> allCombinations = possibleWords(words, 0);
 
-        indexs.add(search(s, permute(Arrays.asList(words), 0)));
+        System.out.println(allCombinations);
 
-        return indexs;
+        for (String combination : allCombinations) {
+            if (s.contains(combination)) result.add(s.indexOf(combination));
+        }
+
+        return result;
     }
 
-    public int search(String fullString, StringBuilder subbString) {
-        int indexOfSubbString = fullString.indexOf(String.valueOf(subbString));
+    public static List<String> possibleWords(String[] words, int index) {
 
-        System.out.println(indexOfSubbString);
-        return indexOfSubbString;
+        String combination = "";
+
+        if (index == words.length) {
+            for (int i = 0; i < words.length; i++) {
+                combination += words[i];
+            }
+            list.add(combination);
+        }
+
+        for (int i = index; i < words.length; i++) {
+            String temp = words[index];
+            words[index] = words[i];
+            words[i] = temp;
+
+            possibleWords(words, index + 1);
+
+            temp = words[index];
+            words[index] = words[i];
+            words[i] = temp;
+        }
+
+        return list;
     }
 }
