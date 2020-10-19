@@ -5,7 +5,7 @@ public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
 
-        for (int i = 0; i < 2 ; i++) {
+        for (int i = 0; i < 2; i++) {
             head = head.next;
         }
 
@@ -23,6 +23,7 @@ public class ReverseLinkedList {
 
     }
 }
+
 class ListNode {
     int val;
     ListNode next;

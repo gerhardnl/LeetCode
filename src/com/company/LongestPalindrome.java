@@ -33,6 +33,6 @@ public class LongestPalindrome {
                 }
             }
         }
-        return s.substring(start,start + maxLength);
+        return s.substring(start, start + maxLength);
     }
 }

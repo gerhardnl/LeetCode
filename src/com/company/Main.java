@@ -4,9 +4,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-        ClimbingStairs climbingStairs = new ClimbingStairs();
-        System.out.println(climbingStairs.climbStairs(10));
+        PascalsTriangle pascalsTriangle = new PascalsTriangle();
 
+        pascalsTriangle.generate(5);
     }
 }
 
