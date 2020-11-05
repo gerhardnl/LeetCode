@@ -4,17 +4,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        RemoveDuplicatesfromSortedList removes = new RemoveDuplicatesfromSortedList();
+        NumberOfValidWordsForEachPuzzle puzzle = new NumberOfValidWordsForEachPuzzle();
+        String[] words = {"aaaa", "asas", "able", "ability", "actt", "actor", "access"};
+        String[] puzzles = {"aboveyz", "abrodyz", "abslute", "absoryz", "actresz", "gaswxyz"};
 
-        ListNode2 head = new ListNode2(1);
-        head.next = new ListNode2(1);
-        head.next.next = new ListNode2(1);
-//        head.next.next.next = new ListNode2(3);
-//        head.next.next.next.next = new ListNode2(3);
-
-        removes.deleteDuplicates(head);
-
-
+        System.out.println(puzzle.findNumOfValidWords(words, puzzles));
     }
 }
 
