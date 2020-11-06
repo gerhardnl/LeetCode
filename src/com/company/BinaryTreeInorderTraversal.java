@@ -6,7 +6,7 @@ import java.util.List;
 public class BinaryTreeInorderTraversal {
     public List<Integer> list = new ArrayList<>();
 
-    public List<Integer> inorderTraversal(TreeNode4 root) {
+    public List<Integer> inorderTraversal(TreeNode5 root) {
         if (root != null) {
 
             inorderTraversal(root.left);
@@ -19,8 +19,8 @@ public class BinaryTreeInorderTraversal {
 
 class TreeNode4 {
     int val;
-    TreeNode4 left;
-    TreeNode4 right;
+    TreeNode5 left;
+    TreeNode5 right;
 
     TreeNode4() {
     }
@@ -29,7 +29,7 @@ class TreeNode4 {
         this.val = val;
     }
 
-    TreeNode4(int val, TreeNode4 left, TreeNode4 right) {
+    TreeNode4(int val, TreeNode5 left, TreeNode5 right) {
         this.val = val;
         this.left = left;
         this.right = right;
