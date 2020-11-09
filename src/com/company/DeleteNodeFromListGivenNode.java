@@ -2,7 +2,7 @@ package com.company;
 
 public class DeleteNodeFromListGivenNode {
 
-    public void deleteNode(ListNode node) {
+    public void deleteNode(ListNode4 node) {
         if (node.next.next == null) {
             node.next = null;
             return;
@@ -17,7 +17,7 @@ public class DeleteNodeFromListGivenNode {
 
 class ListNode1 {
     int val;
-    ListNode next;
+    ListNode4 next;
 
     ListNode1(int x) {
         val = x;

@@ -3,15 +3,15 @@ package com.company;
 public class ReverseLinkedList {
 
 
-    public ListNode reverseList(ListNode head) {
+    public ListNode4 reverseList(ListNode4 head) {
 
         for (int i = 0; i < 2; i++) {
             head = head.next;
         }
 
-        ListNode prev = null;
-        ListNode current = head;
-        ListNode next = null;
+        ListNode4 prev = null;
+        ListNode4 current = head;
+        ListNode4 next = null;
         while (current != null) {
             next = current.next;
             current.next = prev;
@@ -26,7 +26,7 @@ public class ReverseLinkedList {
 
 class ListNode {
     int val;
-    ListNode next;
+    ListNode4 next;
 
     ListNode() {
     }
@@ -35,7 +35,7 @@ class ListNode {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNode(int val, ListNode4 next) {
         this.val = val;
         this.next = next;
     }
